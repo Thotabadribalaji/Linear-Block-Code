@@ -19,7 +19,7 @@ row = int(input("Enter the Message bits : "))
 # Generator matrix
 for i in range (row):
     p = list(map(int, input(f"Enter the row values : {i+1} (Separated by space) : ").split()))  
-    pb.append(p)
+    pb.append(p) 
 p_mat = np.array(pb, dtype=int)
 Ik=np.eye(row, dtype=int) # Diagonal Matrix
 g_mat = np.hstack((p_mat,Ik)) # Generator Matris
